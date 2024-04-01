@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mendel</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="overlay"></div>
+        <div class="pane-close nav__close"></div>
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="logo me-auto"><img src="img/logo.svg" alt="Mendel" class="img-fluid" /></a>
+            <nav class="nav pane" id="nav">
+              <ul class="nav-list d-lg-flex align-items-center">
+                <li class="nav-list__item"><a href="#" class="nav-list__link active">Главная</a></li>
+                <li class="nav-list__item dropdown">
+                  <a href="#" class="nav-list__link">О нас</a>
+                  <div class="dropdown-menu dropdown-menu_nav">
+                    <ul class="sub-nav text_size-md">
+                      <li class="sub-nav__item"><a href="#" class="sub-nav__link">Возврат</a></li>
+                      <li class="sub-nav__item"><a href="#" class="sub-nav__link">Покупка</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Блог</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Отзывы</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                <li class="nav-list__item d-lg-none">
+                  <a href="#callback" class="btn btn_success btn_size-sm modal-open w-100_sm">Написать нам</a>
+                </li>
+                <li class="nav-list__item d-lg-none">
+                  <a href="#basket-empty" class="btn btn_danger btn_size-sm modal-open w-100_sm">Купить диету</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__buttons d-flex align-items-center">
+              <a href="#callback" class="btn btn_success btn_size-sm modal-open d-none d-md-block">Написать нам</a>
+              <a href="#basket-empty" class="btn btn_danger btn_size-sm d-none d-xxxl-block modal-open">Купить диету</a>
+            </div>
+            <a href="#nav" class="btn-menu pane-open d-lg-none">
+              <span class="btn-menu__item"></span>
+              <span class="btn-menu__item"></span>
+              <span class="btn-menu__item"></span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+      <div class="container">
+        <!-- preview -->
+        <section class="preview">
+          <div class="d-md-flex preview__content justify-content-between">
+            <div class="preview__text">
+              <h1 class="title preview__title mb-sm">
+                Готовая <span class="text_success">«Диета стол №5»</span> для тех, кто дорожит здоровьем и доверяет
+                профессионалам!
+              </h1>
+              <div class="preview__image d-md-none">
+                <img src="img/preview.png" alt="" class="img-fluid" />
+              </div>
+              <p>37 специалистов работали над составлением диеты!</p>
+              <p><span class="text_mediumbold text_success">Этого вы не найдете НИГДЕ!</span></p>
+              <div class="preview__row d-xl-flex align-items-center">
+                <div class="order-xl-2">
+                  <p>РАСПРОДАЖА! <br /></p>
+                  <p>ВМЕСТО 750 РУБ! <span class="text_bold text_success">СКИДКА 80%</span></p>
+                  <p class="text_bold text_success text_size-lg preview__price">99 рублей</p>
+                </div>
+                <a href="#basket" class="btn btn_danger w-100_sm modal-open">Купить</a>
+              </div>
+            </div>
+            <div class="preview__image d-none d-md-block">
+              <img src="img/preview.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <!-- advantages -->
+          <div class="advantages d-flex text_size-xs text_mediumbold text_center justify-content-between">
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-list"></div>
+              </div>
+              <p>Полный список продуктов питания с подробным пояснением</p>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-restaurant"></div>
+              </div>
+              <p>Меню из 300+ блюд уникальное и единственное в своем роде!</p>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-time"></div>
+              </div>
+              <p>Дополнительный материал помогающий легко следить за диетой!</p>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-recommendation"></div>
+              </div>
+              <p>Полезные рекомендации и пояснения, как правильно восстанавливать здоровье</p>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-wall-clock"></div>
+              </div>
+              <p>Экономим до 1000 часов освобождая Вас от поиска проверенной информации!</p>
+            </div>
+          </div>
+          <!-- /advantages -->
+        </section>
+        <!-- /preview -->
+      </div>
+      <!-- error-section -->
+      <section class="error-section text_center bg_light">
+        <div class="container">
+          <div class="error-section__text">
+            <h2 class="title title_size-md error-section__title">
+              10 популярных ошибок, которые необратимо ухудшают здоровье при диете стола №5
+            </h2>
+            <p>+ бонус составленное меню на 1 день по нашей диете</p>
+            <a href="#download" class="btn btn_outline-success btn_size-md modal-open">Скачать</a>
+          </div>
+        </div>
+      </section>
+      <!-- /error-section -->
+      <!-- board-section -->
+      <section class="board-section">
+        <div class="container">
+          <h2 class="title text_center mb-md">Диетический стол №5</h2>
+          <div class="board-section__content d-md-flex align-items-center">
+            <div class="board-section__image"><img src="img/professor.png" alt="" class="img-fluid" /></div>
+            <div class="board-section__text">
+              <p>
+                В 1920 году одним из основоположников российской диетологии Мануилом Певзнером была разработана система
+                диет. В ней включен, в числе остальных, стол номер 5.
+                <span class="text_success"
+                  >Это диета для людей страдающих от болезней желчного пузыря, желчевыводящих путей и печени.</span
+                >
+              </p>
+              <div class="board-section__advantages d-flex justify-content-between text_size-md text_center">
+                <div class="advantages-item">
+                  <div class="d-flex justify-content-center advantages-item__icon">
+                    <div class="icon icon-frying"></div>
+                  </div>
+                  <p>Исключена жарка при приготовлении блюд</p>
+                </div>
+                <div class="advantages-item">
+                  <div class="d-flex justify-content-center advantages-item__icon">
+                    <div class="icon icon-harvest"></div>
+                  </div>
+                  <p>
+                    Преобладают<br />
+                    овощи и фрукты
+                  </p>
+                </div>
+                <div class="advantages-item">
+                  <div class="d-flex justify-content-center advantages-item__icon">
+                    <div class="icon icon-nutrients"></div>
+                  </div>
+                  <p>Сохраняется необходимая питательность</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /board-section -->
+      <!-- indicated-section -->
+      <section class="indicated-section bg_light">
+        <div class="container">
+          <h2 class="title text_center mb-xl">Стол № 5 показан больным при:</h2>
+          <div class="arrow-block d-flex flex-wrap justify-content-between text_center text_size-md">
+            <div class="arrow-block__image"><img src="img/heart.svg" alt="" class="img-fluid" /></div>
+            <div class="arrow-block__item advantages-item arrow-block__item_styling">
+              <div class="advantages-item__icon"><div class="icon icon-hepatitis"></div></div>
+              <p>
+                Всех видах гепатитов
+                <span class="text_size-sm d-inline-flex">(хронических и острых при наступлении выздоровления)</span>
+              </p>
+            </div>
+            <div class="arrow-block__item advantages-item arrow-block__item_styling">
+              <div class="advantages-item__icon"><div class="icon icon-cirrhosis"></div></div>
+              <p>Циррозе печени, при сохранении функции</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="arrow-block__item advantages-item arrow-block__item_styling">
+              <div class="advantages-item__icon"><div class="icon icon-gallbladder"></div></div>
+              <p>Заболеваниях желчного, и при образовании камней</p>
+            </div>
+            <div class="arrow-block__item advantages-item arrow-block__item_styling">
+              <div class="advantages-item__icon"><div class="icon icon-intestine"></div></div>
+              <p>Диета назначается при отсутствии патологий кишечника</p>
+            </div>
+            <div class="arrow-block__item advantages-item arrow-block__item_styling">
+              <div class="advantages-item__icon"><div class="icon icon-gallbladder-2"></div></div>
+              <p>Всех видах холециститов, и хронической формы</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /indicated-section -->
+      <!-- info-section -->
+      <section class="info-section">
+        <div class="container">
+          <div class="info-section__content">
+            <div class="info-section__goals">
+              <div class="circle-icon d-flex align-items-center justify-content-center">
+                <span class="icon icon-diet"></span>
+              </div>
+              <h2 class="title mb-sm">Задачи диеты</h2>
+              <div class="info-section__text">
+                <p>
+                  Задача пятого стола – сохранение режима питания, нормализующих функции желчного и желчевыводящих
+                  путей, минимизирующее химические воздействия на печень.
+                </p>
+              </div>
+            </div>
+            <div class="info-section__peculiarities">
+              <h3 class="title mb-lg">Особенности диеты</h3>
+              <ul class="number-list">
+                <li class="number-list__item">
+                  допустимые способы приготовления – тушение, запекание, варка. Мясо необходимо измельчить, некоторые
+                  виды овощей, с повышенным содержание растительной клетчатки протираются. Пассеровка не допускается;
+                </li>
+                <li class="number-list__item">ограничены жирные продукты;</li>
+                <li class="number-list__item">частичное ограничение в потреблении соли;</li>
+                <li class="number-list__item">
+                  продукты содержащие щавелевую кислоту или пурины, например печень, дрожжи, кофе исключаются;
+                </li>
+                <li class="number-list__item">
+                  пища содержащая клетчатку, либо экстрактивные вещества противопоказана;
+                </li>
+                <li class="number-list__item">сохраняется нормальный уровень углеводов и белка в блюдах;</li>
+                <li class="number-list__item">употребление блюд в холодном виде не рекомендовано.</li>
+              </ul>
+            </div>
+            <div class="info-section__frequency">
+              <div class="circle-icon d-flex align-items-center justify-content-center">
+                <span class="icon icon-time-black"></span>
+              </div>
+              <h3 class="title mb-sm">Частота приема пищи</h3>
+              <div class="info-section__text">
+                <p>Рекомендован прием пищи до 5 раз в день, одинаковыми порциями, обильный питьевой режим.</p>
+              </div>
+              <div class="text_success">
+                Также для поддержания нормального функционирования печени показано назначение
+                препаратов-гепатопротекторов.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /info-section -->
+      <!-- statistic-secction -->
+      <section class="statistic-secction">
+        <div class="statistic-secction__image statistic-secction__image_first"></div>
+        <div class="statistic-secction__image statistic-secction__image_last"></div>
+        <div class="container container_lg">
+          <h2 class="title mb-xl text_center">Суточная калорийность и химический анализ пищи</h2>
+          <div class="statistic-secction__content justify-content-between text_center">
+            <div class="statistic-item">
+              <div class="statistic-item__num">2600</div>
+              <p>суточная норма калорий</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">80</div>
+              <p>грамм белков, не более, животного и растительного происхождения в равных долях</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">90</div>
+              <p>грамм жиров, не более, преимущественно растительные</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">410</div>
+              <p>грамм углеводов, не более</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">1,5</div>
+              <p>литра жидкостей ежедневно, не менее</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">10</div>
+              <p>грамм соли, умеренное употребление</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /statistic-secction -->
+      <!-- tab-section -->
+      <div class="tab-section section">
+        <div class="container">
+          <ul class="tab-nav d-flex justify-content-between flex-wrap tab-nav-js mb-md">
+            <li class="tab-nav__item"><a href="#beverages" class="tab-nav__link tab-link active">Напитки</a></li>
+            <li class="tab-nav__item"><a href="#first-meal" class="tab-nav__link tab-link">первые блюда</a></li>
+            <li class="tab-nav__item"><a href="#cereal-dishes" class="tab-nav__link tab-link">блюда из круп</a></li>
+            <li class="tab-nav__item"><a href="#pasta" class="tab-nav__link tab-link">макароны</a></li>
+            <li class="tab-nav__item"><a href="#meat-and-fish" class="tab-nav__link tab-link">мясо и рыба</a></li>
+            <li class="tab-nav__item">
+              <a href="#bakery-products" class="tab-nav__link tab-link">хлебобулочные изделия</a>
+            </li>
+            <li class="tab-nav__item"><a href="#vegetables" class="tab-nav__link tab-link">овощи</a></li>
+            <li class="tab-nav__item">
+              <a href="#fruits-and-berries" class="tab-nav__link tab-link">фрукты и ягоды</a>
+            </li>
+            <li class="tab-nav__item"><a href="#eggs" class="tab-nav__link tab-link">яйца</a></li>
+            <li class="tab-nav__item"><a href="#oil" class="tab-nav__link tab-link">масло</a></li>
+            <li class="tab-nav__item">
+              <a href="#salads-and-snacks" class="tab-nav__link tab-link">салаты и закуски</a>
+            </li>
+            <li class="tab-nav__item">
+              <a href="#seasonings-and-sauces" class="tab-nav__link tab-link">приправы и соусы</a>
+            </li>
+            <li class="tab-nav__item"><a href="#dessert" class="tab-nav__link tab-link">десерты</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="beverages">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Некрепкий чай с молоком, лимоном, несладкий или с подсластителем</li>
+                    <li class="dots-list__item">Кисели</li>
+                    <li class="dots-list__item">Напиток из плодов шиповника</li>
+                    <li class="dots-list__item">Ромашковый чай</li>
+                    <li class="dots-list__item">Морсы не кислые</li>
+                    <li class="dots-list__item">Сокосодержащие нектары</li>
+                    <li class="dots-list__item">
+                      Желе и муссовые напитки на подсластителях или с малым содержанием сахара
+                    </li>
+                    <li class="dots-list__item">Экстракты и отвары из стевии</li>
+                    <li class="dots-list__item">Компоты</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Все виды алкоголя</li>
+                    <li class="dots-list__item">Кофе и кофеиносодержащие напитки</li>
+                    <li class="dots-list__item">Цикорий</li>
+                    <li class="dots-list__item">Кэроб</li>
+                    <li class="dots-list__item">Газировка</li>
+                    <li class="dots-list__item">Шоколад и какао</li>
+                    <li class="dots-list__item">Крепкий зеленый или черный чай</li>
+                    <li class="dots-list__item">Сыворотка из цельного молока</li>
+                    <li class="dots-list__item">Каркаде</li>
+                    <li class="dots-list__item">Фруктовые и овощные соки</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="first-meal">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">
+                      Супам, сваренным без использования бульонов, отдается приоритет в диете
+                    </li>
+                    <li class="dots-list__item">
+                      Овощные супы-пюре из тыквы, кабачка, картофеля, моркови. Могут быть с крупами и сливочным маслом
+                      либо сметаной в небольшом количестве
+                    </li>
+                    <li class="dots-list__item">Суп с перловой крупой и сметаной</li>
+                    <li class="dots-list__item">Суп из фруктов</li>
+                    <li class="dots-list__item">Все виды молочных супов</li>
+                    <li class="dots-list__item">Щи и борщи вегетарианские</li>
+                    <li class="dots-list__item">Суп и малым содержанием бобовых, гороха</li>
+                    <li class="dots-list__item">Свекольники</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Мясные бульоны</li>
+                    <li class="dots-list__item">Рыбные бульоны</li>
+                    <li class="dots-list__item">Грибные бульоны</li>
+                    <li class="dots-list__item">Все супы на основе бобовых исключены</li>
+                    <li class="dots-list__item">Щавелевый суп</li>
+                    <li class="dots-list__item">Все виды окрошек.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="cereal-dishes">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Гречневая и овсяная каши</li>
+                    <li class="dots-list__item">Каша из манной крупы</li>
+                    <li class="dots-list__item">Рисовая каша</li>
+                    <li class="dots-list__item">Все каши варятся на воде, либо воде с добавлением молока</li>
+                    <li class="dots-list__item">Мюсли</li>
+                    <li class="dots-list__item">
+                      Иные блюда из круп: пудинги, суфле, запеканки, можно с добавлением нежирного творога
+                    </li>
+                    <li class="dots-list__item">Плов с различными несладкими сухофруктами</li>
+                    <li class="dots-list__item">Льняная каша</li>
+                    <li class="dots-list__item">Овсяные хлопья простые</li>
+                    <li class="dots-list__item">Пшёнка на воде</li>
+                    <li class="dots-list__item">Булгур и кус-кус</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Блюда из бобовых</li>
+                    <li class="dots-list__item">Каша из чечевицы</li>
+                    <li class="dots-list__item">Каша из колотого гороха или хлопьев</li>
+                    <li class="dots-list__item">Кукурузная ячневая каши и перловка допустимы изредка</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="pasta">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Паста с малым содержанием жиров</li>
+                    <li class="dots-list__item">Не допускается добавление запрещенных продуктов</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Пасты с повышенным содержанием жиров</li>
+                    <li class="dots-list__item">Острые пасты, с добавлением томатных и иных острых соусов</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="meat-and-fish">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">
+                      Все мясо приготовлено на пару или отварное (нежирные кролик, курица, телятина, индейка, конина,
+                      говядина). При этом все мясо протирается или мелко рубится (бефстроганов, запеченное суфле,
+                      паровые котлеты, пюре, мягкое отварное мясо, кнели)
+                    </li>
+                    <li class="dots-list__item">Сосиски сливочные, молочные в небольшом количестве</li>
+                    <li class="dots-list__item">
+                      Вареная, запеченная рыба нежирных сортов (минтай, судак, тунец, треска, хек). Присутствие в меню
+                      не более 3 раз в неделю (в виде куска филе, фрикаделек, котлет, суфле)
+                    </li>
+                    <li class="dots-list__item">Голубцы с нежирным отварным мясом, плов</li>
+                    <li class="dots-list__item">
+                      Креветки, мидии, кальмары допускаются ограничено, предпочтительно устрицы
+                    </li>
+                    <li class="dots-list__item">
+                      Лосось и другая нежирная красная рыба, допускается в ограниченном количестве
+                    </li>
+                    <li class="dots-list__item">
+                      Отварные пельмени, хинкали исключительно с диетическим мясом, присутствуют в меню не чаще 2 раз в
+                      месяц, сохраняется ограничение жиров
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Мясные субпродукты</li>
+                    <li class="dots-list__item">Мясные и мясосодержащие консервы</li>
+                    <li class="dots-list__item">Все виды колбас, колбасных изделий, в том числе копченые</li>
+                    <li class="dots-list__item">Свиной жир допустим в малом количестве, иные жиры исключаются</li>
+                    <li class="dots-list__item">Консервы рыбосодержащие и рыбные</li>
+                    <li class="dots-list__item">Любые сорта рыбы пряного и иного посола, копченые</li>
+                    <li class="dots-list__item">Черная зернистая икра, суши, красная зернистая икра</li>
+                    <li class="dots-list__item">
+                      Жирная рыба: сом, севрюга, сазан, семга, форель, угорь, осетрина, белуга
+                    </li>
+                    <li class="dots-list__item">Крабовые палочки</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="bakery-products">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Хлеб с добавлением отрубей</li>
+                    <li class="dots-list__item">Сухари из разрешенных видов хлеба</li>
+                    <li class="dots-list__item">Пшеничный хлеб из муки второго или первого сортов, вчерашний</li>
+                    <li class="dots-list__item">Ржаной хлеб</li>
+                    <li class="dots-list__item">Галеты, несдобные сухие печенья</li>
+                    <li class="dots-list__item">Выпечка несдобная, в том числе с начинками из разрешенных продуктов</li>
+                    <li class="dots-list__item">Сухие бисквитные изделия</li>
+                    <li class="dots-list__item">Отруби</li>
+                    <li class="dots-list__item">Различные сухие хлебцы.</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Пирожки сдобные жареные, пончики</li>
+                    <li class="dots-list__item">
+                      Выпечка из слоеного, слоено-дрожжевого и дрожжевого теста, в том числе сухари из нее
+                    </li>
+                    <li class="dots-list__item">Хлеб первой свежести</li>
+                    <li class="dots-list__item">Оладьи, блинчики</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="vegetables">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Капуста: цветная, пекинская, брокколи</li>
+                    <li class="dots-list__item">
+                      Картофель, кабачок, свёкла, морковь, тыква. (вареные или запеченные, с последующим измельчением до
+                      пюре)
+                    </li>
+                    <li class="dots-list__item">Листовые салаты не пряные допускаются изредка</li>
+                    <li class="dots-list__item">Авокадо</li>
+                    <li class="dots-list__item">С ограничением томаты, болгарский перец</li>
+                    <li class="dots-list__item">Свежая морская капуста</li>
+                    <li class="dots-list__item">Сельдерей, только после термообработки</li>
+                    <li class="dots-list__item">Огурцы</li>
+                    <li class="dots-list__item">Фасоль спаржевая, паровая или запеченная</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Зеленый лук</li>
+                    <li class="dots-list__item">
+                      Все виды пряных острых трав и салатов, исключение использованные для украшения разрешенных блюд
+                    </li>
+                    <li class="dots-list__item">Грибы свежие и маринованные</li>
+                    <li class="dots-list__item">
+                      Баклажаны, кукуруза, репа, чеснок, лук репчатый, шпинат, спаржа, щавель, редька, ревень, редис
+                    </li>
+                    <li class="dots-list__item">Маринование, как способ приготовления овощей запрещено</li>
+                    <li class="dots-list__item">Соусы и пасты томатные</li>
+                    <li class="dots-list__item">Капуста бело- и краснокочанная свежая исключена</li>
+                    <li class="dots-list__item">Консервированные фрукты и овощи</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="fruits-and-berries">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Разрешено употребление в пищу по одному банану в день</li>
+                    <li class="dots-list__item">
+                      Компоты, муссовые напитки, желе (приготовленные с минимальным количеством сахара, или
+                      подсластителях)
+                    </li>
+                    <li class="dots-list__item">Яблоки зрелые, не твердые, и не кислые. В сыром виде или запеченные</li>
+                    <li class="dots-list__item">Компоты на сухофруктах протертые несладкие</li>
+                    <li class="dots-list__item">Гранаты, в небольших количествах</li>
+                    <li class="dots-list__item">
+                      Чернослив и другие сухофрукты. В том числе дыня сушеная, курага, сушеная папайя
+                    </li>
+                    <li class="dots-list__item">В небольших количествах до 2 порций разрешены арбузы</li>
+                    <li class="dots-list__item">
+                      Все разрешенные фрукты можно употреблять в виде соков, пюре и салатов
+                    </li>
+                    <li class="dots-list__item">В ограниченном количестве можно: папайя свежая, ананас, дыни свежие</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Имбирь</li>
+                    <li class="dots-list__item">Все виды орехов, ореховые пасты исключены</li>
+                    <li class="dots-list__item">Козинаки, блюда содержащие семечки тыквы, семечки подсолнечника</li>
+                    <li class="dots-list__item">Кислые цитрусовые: лимон, мандарин, апельсин</li>
+                    <li class="dots-list__item">Ягоды: виноград, клюква, малина, брусника, клубника</li>
+                    <li class="dots-list__item">Киви, хурма, груша, дыни рекомендованы в небольшом количестве.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="eggs">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Омлеты из белков яиц</li>
+                    <li class="dots-list__item">Яйца куриные вкрутую и перепелиные яйца</li>
+                    <li class="dots-list__item">
+                      В пищу употребляются белки, желтки не более половины одного с добавлением в другое блюдо
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Яичницы, омлеты из куриных и перепелиных яиц целиком</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="oil">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Разрешенное количество масла сливочного не более 30 грамм</li>
+                    <li class="dots-list__item">
+                      Подсолнечного и иных растительных рафинированных масел не более 15 грамм
+                    </li>
+                    <li class="dots-list__item">В небольших количествах разрешено употреблять оливковое масло</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Все нерафинированные масла запрещены к употреблению</li>
+                    <li class="dots-list__item">Свиное сало свежее и после термообработки</li>
+                    <li class="dots-list__item">Все виды кулинарных жиров</li>
+                    <li class="dots-list__item">Жир и сало говяжье, а также баранье исключено</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="salads-and-snacks">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">
+                      Мясные салаты с отварным мясом и салаты из морепродуктов, разрешенных диетой
+                    </li>
+                    <li class="dots-list__item">Салаты из овощей заправленные маслом растительным</li>
+                    <li class="dots-list__item">Салаты из свежих фруктов в небольшом количестве</li>
+                    <li class="dots-list__item">Икра из кабачков неострая</li>
+                    <li class="dots-list__item">Сельдь нежирная после вымачивания</li>
+                    <li class="dots-list__item">Рыбное заливное, приготовленное с отварной рыбой</li>
+                    <li class="dots-list__item">Фаршированная овощами нежирная рыба</li>
+                    <li class="dots-list__item">Промытая квашеная капуста, заправка уксусом запрещена</li>
+                    <li class="dots-list__item">Все виды винегретов с использованием рекомендованных овощей</li>
+                    <li class="dots-list__item">Салаты с добавлением неострых сыров пониженной жирности</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Сушеные и вяленые томаты в масле и без</li>
+                    <li class="dots-list__item">Закуски с повышенным содержанием жиров</li>
+                    <li class="dots-list__item">Употребление любых копченых закусок исключено</li>
+                    <li class="dots-list__item">Маслины: консервированные, маринованные, свежие</li>
+                    <li class="dots-list__item">Роллы с использованием маринованного и свежего имбиря</li>
+                    <li class="dots-list__item">Острые закуски</li>
+                    <li class="dots-list__item">Любые консервированные продукты</li>
+                    <li class="dots-list__item">Жирные блюда</li>
+                    <li class="dots-list__item">Оливки: консервированные, маринованные, свежие</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="seasonings-and-sauces">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Соусы на основе молочных продуктов</li>
+                    <li class="dots-list__item">
+                      Подливы из фруктов, при этом используемую для загущения муку не обжаривают
+                    </li>
+                    <li class="dots-list__item">Корица допускается в качестве ароматизатора, также ванилин</li>
+                    <li class="dots-list__item">Соус из соевых бобов, неострый в малых количествах</li>
+                    <li class="dots-list__item">Соусы и подливы из овощей допускаемых на диете</li>
+                    <li class="dots-list__item">Не более чем 10 грамм соли в день</li>
+                    <li class="dots-list__item">Для придания аромата овощным соусам допускается укроп или петрушка</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Майонез</li>
+                    <li class="dots-list__item">Томатная паста, кетчуп, соус томатный</li>
+                    <li class="dots-list__item">Хрен, соус васаби</li>
+                    <li class="dots-list__item">Горчица, в том числе зерновая, дижонская</li>
+                    <li class="dots-list__item">Черный и красный перец, куркума, любые пряности</li>
+                    <li class="dots-list__item">Аджика</li>
+                    <li class="dots-list__item">Винный, яблочный, спиртовой уксусы</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="dessert">
+              <div class="d-grid grid-md-2 tab-pane__content">
+                <div class="tab-pane__col">
+                  <div class="btn btn_success w-100 tab-pane__title mb-md">Рекомендовано</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">В ограниченном количестве разрешены зефир, печенье по типу меренги.</li>
+                    <li class="dots-list__item">Ягоды и фрукты из компотов или запеченные</li>
+                    <li class="dots-list__item">Муссы</li>
+                    <li class="dots-list__item">Мармелад не кислый</li>
+                    <li class="dots-list__item">Пастила</li>
+                    <li class="dots-list__item">Сухофрукты в небольшом количестве или из разрешенных фруктов</li>
+                    <li class="dots-list__item">Кисели и желе</li>
+                    <li class="dots-list__item">Конфеты, не содержащие какао и какао-продукты</li>
+                    <li class="dots-list__item">Мед натуральный</li>
+                    <li class="dots-list__item">
+                      Вареники с несладкими ягодными начинками, с картофелем и другими овощами
+                    </li>
+                    <li class="dots-list__item">
+                      Варенье сладкое преимущественно для подслащения напитков или в малых количествах
+                    </li>
+                    <li class="dots-list__item">
+                      Сахар заменяется сахарозаменителями или употребляется в небольших количествах
+                    </li>
+                    <li class="dots-list__item">Простые не шоколадные пряники по одному в день</li>
+                    <li class="dots-list__item">Мягкая карамель и леденцы</li>
+                    <li class="dots-list__item">Нуга, исключая ореховую</li>
+                    <li class="dots-list__item">Бисквитная выпечка изредка</li>
+                    <li class="dots-list__item">Рахат-лукум, исключая с добавлением семечек и орехов</li>
+                  </ul>
+                </div>
+                <div class="tab-pane__col">
+                  <div class="btn btn_light w-100 tab-pane__title mb-md">Исключены</div>
+                  <ul class="dots-list">
+                    <li class="dots-list__item">Мороженное, за исключением фруктового льда в малых количествах</li>
+                    <li class="dots-list__item">Все виды шоколадных изделий</li>
+                    <li class="dots-list__item">Кремовые десерты</li>
+                    <li class="dots-list__item">Халва, по любой рецептуре, включая с сахарозаменителями</li>
+                    <li class="dots-list__item">Батончики-мюсли</li>
+                    <li class="dots-list__item">Семечки, орехи, включая глазированные</li>
+                    <li class="dots-list__item">Гематоген</li>
+                    <li class="dots-list__item">Жевательные резинки</li>
+                    <li class="dots-list__item">Сладкий и соленый попкорн</li>
+                    <li class="dots-list__item">Вафли с масляной начинкой, с добавлением какао</li>
+                    <li class="dots-list__item">Щербет, козинаки любых видов, чак-чак</li>
+                    <li class="dots-list__item">Сладости с добавлением семечек, кунжута, орехов</li>
+                    <li class="dots-list__item">Десерты с масляным или другим жирным кремом</li>
+                    <li class="dots-list__item">
+                      Сгущенное молоко, с добавлением какао и без, концентрированные сливки
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /tab-section -->
+      <div class="container">
+        <!-- row -->
+        <div class="row d-lg-flex align-items-center justify-content-between">
+          <div class="row__text">
+            <h3 class="title mb-sm">Длительность применения стола номер 5</h3>
+            <p>
+              Начинают применение диеты №5 с пробного периода. Если пациент реагирует на смену рациона положительно
+              вводят стол на длительный период. Минимальный срок – пять недель, либо до наступления устойчивой ремиссии.
+              Оправдано при хронических заболеваниях использование диеты на постоянной основе, либо на протяжении
+              полутора, двух лет. Длительность применения обусловлена максимальным приближением стола номер пять к
+              обычному здоровому питанию. Выделяются некоторые ключевые моменты, способствующие оздоровлению
+              желудочно-кишечного тракта. Стол №5 – щадящие питание для печени, желчного и кишечника
+            </p>
+          </div>
+          <div class="row__image row__image-first"><img src="img/content/row.png" alt="" class="img-fluid" /></div>
+        </div>
+        <!-- /row -->
+        <!-- row -->
+        <div class="row section d-lg-flex align-items-center justify-content-between">
+          <div class="row__text order-lg-2">
+            <h3 class="title mb-sm">Технология блюд на диете</h3>
+            <p>
+              Блюда запекают, готовят на пару. Отварные и запеченные продукты протираются или измельчаются до
+              однородности. Прием горячих или холодных блюд не рекомендован, пища потребляется комфортной температуры
+            </p>
+          </div>
+          <div class="row__image row__image-second"><img src="img/content/row-2.png" alt="" class="img-fluid" /></div>
+        </div>
+        <!-- /row -->
+        <!-- options-section -->
+        <section class="options-section">
+          <h2 class="title text_center mb-xl">Варианты меню</h2>
+          <div class="options-item mb-md">
+            <a href="#options-1" class="options-item__link title text_upper collapse-link"
+              >пример 1 <span class="icon icon-plus options-item__icon"></span
+            ></a>
+            <div class="collapse" id="options-1">
+              <div class="options-item__content text_size-md">
+                <p>
+                  <span class="text_mediumbold">Завтрак:</span> паровые тефтели из нежирной говядины, манная каша на
+                  воде, чай с сахаром и лимоном.
+                </p>
+                <p><span class="text_mediumbold">Второй завтрак:</span> яблоко с добавлением меда или карамели.</p>
+                <p>
+                  <span class="text_mediumbold">Обед:</span> суп на овощном бульоне с перловой крупой, отварная куриная
+                  грудка, картофельное пюре, фруктовый компот с подсластителем.
+                </p>
+                <p><span class="text_mediumbold">Полдник:</span> напиток из плодов шиповника.</p>
+                <p><span class="text_mediumbold">Ужин:</span> Овощные свекольные котлеты с соусом, чай, галета.</p>
+              </div>
+            </div>
+          </div>
+          <div class="options-item mb-md">
+            <a href="#options-2" class="options-item__link title text_upper collapse-link"
+              >пример 2 <span class="icon icon-plus options-item__icon"></span
+            ></a>
+            <div class="collapse" id="options-2">
+              <div class="options-item__content text_size-md">
+                <p>
+                  <span class="text_mediumbold">Первый завтрак:</span> чай, натуральный йогурт, пшенная каша на воде или
+                  разбавленном молоке.
+                </p>
+                <p><span class="text_mediumbold">Второй завтрак:</span> банан, сухофрукты.</p>
+                <p>
+                  <span class="text_mediumbold">Обед:</span> суп-ассорти из овощей с добавлением оливкового масла;
+                  нежирный мясной рулет с овощами, отварной рис. Компот из чернослива.
+                </p>
+                <p>
+                  <span class="text_mediumbold">Полдник:</span> сухарики, сухое печенье, напиток из плодов шиповника.
+                </p>
+                <p>
+                  <span class="text_mediumbold">Ужин:</span> картофельное пюре, отварная рыбное филе со сметанным
+                  соусом, пшеничные хлебцы, чай с молоком.На ночь простокваша.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            Существует также диета 5а, показана также при хронических и острых панкреатитах. Обе этих номерных диеты
+            регулируют обмен веществ, поэтому одновременно с выполнением лечебных свойств способствуют снижению веса
+          </div>
+        </section>
+        <!-- /options-section -->
+      </div>
+      <!-- data-section -->
+      <section class="data-section bg_light">
+        <div class="container">
+          <h2 class="title text_center mb-xl">
+            Вам понадобится 6 месяцев, чтобы найти в интернете <br class="d-none d-md-block" />всю необходимую
+            информацию
+          </h2>
+          <div class="data-section__content d-md-grid grid-2 grid-lg-4 justify-content-between">
+            <div class="statistic-item">
+              <div class="statistic-item__num">1124</div>
+              <p>Часов потрачено на обработку и создание информации по диете</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">483</div>
+              <p>Книг, научных публикайий, сайтов мы просмотрели, чтобы соединить всю информацию</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">300</div>
+              <p>Более 300 блюд в меню, собранные воедино, в одном месте, здесь и сейчас</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">37</div>
+              <p>Специалистов из разных сфер помогали в создании диеты. Врачи, диетологи, спортсмены</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /data-section -->
+      <!-- reviews-section -->
+      <section class="reviews-section">
+        <div class="container">
+          <h2 class="title text_center mb-xl">
+            Они уже восстанавливают <br class="d-none d-md-block" />здоровье на диете стола №5
+          </h2>
+          <div class="reviews-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <img src="img/content/review-1.png" alt="" class="img-fluid ms-auto me-auto" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <img src="img/content/review-2.png" alt="" class="img-fluid ms-auto me-auto" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <img src="img/content/review-3.png" alt="" class="img-fluid ms-auto me-auto" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-1.png" alt="" class="img-fluid" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Людмила Усынина</div>
+                    <p>
+                      Большое Вам спасибо, Вы так облегчили мои поиски. Смотрела на многих сайтах, искала подробную
+                      информацию, честно говоря ничего хорошего не нашла. Решила купить у Вас и осталась полностью
+                      довольна. Теперь у меня есть все необходимое и больше ничего искать не нужно. Желаю вам успехов.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-2.png" alt="" class="img-fluid" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Алексей Василец</div>
+                    <p>
+                      Не особо люблю рыться по сайтам и рыться в этой сумбурных потоках информации! Наткнулся на данный
+                      сайт, был очень рад, что можно полностью все купить за смешную цену и не париться! Благодарю за
+                      подробную информацию и развернутые описания, все теперь стало гораздо легче. Желаю Вам успехов!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-3.png" alt="" class="img-fluid" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Андрей Алиферов</div>
+                    <p>
+                      Получил материалы сразу после оплаты. Все четко никакой воды. Взял для себя, не люблю готовить, да
+                      и не хочу разбираться. Передал жене, она была в восторге, говорит все, что нужно теперь есть. В
+                      общем кайфует, и от себя лично примите благодарность за проделанную работу. Довольна моя жена,
+                      доволен и я! Всего вам хорошего!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-4.png" alt="" class="img-fluid" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Антон Краснов</div>
+                    <p>
+                      Добрый день! При гастрите врачи прописали мне диету стола 5. Долго искал полезную информацию, но
+                      ничего близко даже не было в сравнении с тем, что есть у Вас. Все настолько детально и интересно
+                      написано, а главное питаться теперь стало интересно, готовлю сам, а с Вашим меню стало еще гораздо
+                      интереснее, особенно закуски и завтраки это бомба! Спасибо большое, что упростили мне жизнь =)))
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__image"><img src="img/content/user-5.png" alt="" class="img-fluid" /></div>
+                  <div class="reviews-item__name text_center title title_size-sm">Андрей Платонов</div>
+                  <p>
+                    Часто нахожусь в дороге и дома практически не бываю. Сестре прописали диету 5. Быстро нашел ваш сайт
+                    и просто купил, посмотрел, изучил материалы и остался доволен. Теперь четко знаю, что и как должно
+                    быть, да и контролировать диету сестры будет проще. Сама сестра говорит, что ничего подобного найти
+                    не могла, удивлялась, откуда я все это взял =) Спасибо за материалы, я и моя сестра остались
+                    довольны =)))
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-6.png" alt="" class="img-fluid" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Ольга Смелова</div>
+                    <p>
+                      Искала для папы полную инструкцию по диете стола №5 и ничего не нашла, даже близко не было к тому,
+                      что я купила здесь =) Спасибо ребятам за подробную инструкцию, а Алене за ответы на вопросы и
+                      полезные советы =))) Папуля теперь у меня довольный ходит, рацион питания общирный, что даже не
+                      заметил, как сел на данную диету. Кстати меню здесь сумасшедше крутое))) Мама теперь тоже по нему
+                      готовит ;-)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-7.png" alt="" class="img-fluid" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Алена Балашова</div>
+                    <p>
+                      У мамы вырезали желчный пузырь и посоветовали данную диету. Эти врачи толком и сами похоже не
+                      знают, что и как следовать данной диете, да и не объясняют. Наткнулась на данный сайт, долго
+                      думала брать или нет, потом все таки решилась. Удивительно, но все оказалось настолько здорово,
+                      что теперь я все поняла и маме объяснила, довольные, как два воробушка. Теперь не знаем проблем
+                      все под рукой и не нужно лазить по куче непонятным сайтам.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-8.png" alt="" class="img-fluid" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Валерия Никишева</div>
+                    <p>
+                      Я хоть и не глупая девочка, готовить умею и в диетах разибраюсь. Но какой кошмар искать или читать
+                      то, что понаписали на других сайтах. Решила взять у Вас. Вы прям такие большие молодцы!!! Вау,
+                      вау, вау! Все супер и описание продуктов и меню. Мама довольна, брала для нее, да и мне теперь не
+                      нужно думать, что и как делать, ведь вы все дали, теперь могу со спокойной душой помогать маме. Да
+                      и от моей мамы тоже большое Спасибо за материалы! Целую и обнимаю!!! =))))
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-9.png" alt="" class="img-fluid" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Антон Иванов</div>
+                    <p>
+                      Сам занимаюсь спортом, но с такой диетой столкнулся впервые. Много непонятной информации, да и
+                      зная, что там за бред пишут, просто купил на вашем сайте. Взял для своей мамы. Почитав вашу
+                      инструкцию, рекомендации и дополнения, все стало предельно понятно. Молодцы все четко и без лишней
+                      воды, как я и люблю. Объяснил все маме и передал ей меню. Мама осталась восторге! А от меня
+                      большое Вам спасибо!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image">
+                      <img src="img/content/user-10.png" alt="" class="img-fluid" />
+                    </div>
+                    <div class="reviews-item__name text_center title title_size-sm">Ирина Ярушина</div>
+                    <p>
+                      Живу на дальнем востоке. Думаю уже понимаете, как тут тяжело с правильным питанием, а про диеты
+                      говорить уж и не буду. У папы гострит, а у мамы недавно была операция и прописали стол №5. Долго
+                      парилась, искала хоть какую-нибудь развернутую информацию, все как-то кусочками, непонятно и куча
+                      вопросов. Наткнулась на Ваш сайт, купила материалы и оооо чудо!!! Все встало на свои места,
+                      особенно спасибо поворам за составленное меню. Мама сначала расстраивалась, не знала что кушать, а
+                      по вашему меню, как гора с плеч, теперь уж с питанием у нее не будет проблем ;-)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item text_size-md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image">
+                      <img src="img/content/user-11.png" alt="" class="img-fluid" />
+                    </div>
+                    <div class="reviews-item__name text_center title title_size-sm">Арина Талипова</div>
+                    <p>
+                      Живу в Казахстане! Врач прописал диету стола номер 5. Попросила племянника найти информацию по
+                      данной диете, но ничего хорошего не было. Пока не скинул Ваш сайт, решилась взять с надеждой, что
+                      у Вас все, как и написано. Приятно поражена, насколько легко и просто у вас все написано.
+                      Понравилось описание про продукты питания, очень хорошо сделанное меню, многие рецепты перенесла
+                      себе в книжку. Спасибо еще раз, что делаете полезное дело. Цена ваших материалов меня устроила,
+                      конечно хочется заплатить меньше, все таки на пенсии, но сужу по тому, что мне прислали, все в
+                      пределах нормы и цена нормальная. От чистого сердца мое глубочайшее спасибо!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center swiper-nav">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination d-flex align-items-center"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /reviews-section -->
+      <!-- description-section -->
+      <section class="description-section bg_light">
+        <div class="container">
+          <h2 class="title text_center mb-xl">
+            <span class="text_success">«Диета стол №5»</span> <br />
+            Полное описание используемое врачами!
+          </h2>
+          <div class="arrow-block d-flex flex-wrap justify-content-between text_center text_mediumbold">
+            <div class="arrow-block__image arrow-block__image_md d-flex justify-content-center">
+              <img src="img/description.png" alt="" class="img-fluid" />
+            </div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon"><div class="icon icon-list icon-list_lg"></div></div>
+              <p>Полный список продуктов питания с подробным пояснением</p>
+            </div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon"><div class="icon icon-wall-clock icon-wall-clock_lg"></div></div>
+              <p>Экономим до 1000 часов освобождая Вас от поиска проверенной информации!</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon"><div class="icon icon-time icon-time_lg"></div></div>
+              <p>Дополнительный материал помогающий легко следить за диетой!</p>
+            </div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon"><div class="icon icon-restaurant icon-restaurant_lg"></div></div>
+              <p>Меню из 300+ блюд уникальное и единственное в своем роде!</p>
+            </div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon">
+                <div class="icon icon-recommendation icon-recommendation_lg"></div>
+              </div>
+              <p>Полезные рекомендации и пояснения, как правильно восстанавливать здоровье</p>
+            </div>
+          </div>
+          <div class="description-section__text text_center">
+            <p>
+              37 специалистов работали над составлением диеты!
+              <span class="text_success text_semimbold">Этого вы не найдете НИГДЕ!</span>
+            </p>
+            <p class="text_upper text_semimbold">
+              РАСПРОДАЖА! ВМЕСТО 750 РУБ! <span class="text_size-lg text_success">СКИДКА 80%</span>
+            </p>
+            <div class="text_success mb-md text_size-xl description-section__price"><strong>99 рублей</strong></div>
+            <a href="#" class="btn btn_danger w-100">Купить сейчас</a>
+          </div>
+        </div>
+      </section>
+      <!-- /description-section -->
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content text_size-sm d-lg-flex justify-content-between">
+            <div class="footer__col">
+              <a href="index.html" class="logo footer__logo d-inline-flex"
+                ><img src="img/logo.svg" alt="" class="img-fluid"
+              /></a>
+              <p>ОГРН: 312167306600046 <br />ИНН: 164809246567</p>
+              <p><a href="#" class="text_inversion">Политика конфиденциальности</a></p>
+              <p><a href="#" class="text_inversion">Оферта</a></p>
+            </div>
+            <div class="footer__col_large">
+              <a href="#basket-removed" class="btn w-100 btn_danger footer__btn btn_size-sm modal-open">Купить диету</a>
+              <div class="d-md-flex justify-content-between">
+                <ul class="footer-nav">
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">Главная</a></li>
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">Отзывы</a></li>
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">О нас</a></li>
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">Контакты</a></li>
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">Блог</a></li>
+                </ul>
+                <div class="footer__social">
+                  <div class="social-group d-md-flex">
+                    <div class="social-group__title">Подпишитесь на наши социальные сети:</div>
+                    <ul class="social-list">
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-facebook"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-vk"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-telegram"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-instagram"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-whatsapp"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-email"></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="social-group d-md-flex">
+                    <div class="social-group__title">Связаться с нами:</div>
+                    <ul class="social-list">
+                      <li class="social-list__item"><a href="#" class="social-list__link icon icon-phone-call"></a></li>
+                      <li class="social-list__item"><a href="#" class="social-list__link icon icon-email"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /footer -->
+    </div>
+
+    <!-- callback -->
+    <div class="modal fade" id="callback">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="modal__title title title_size-lg">Написать нам</div>
+          <div class="modal__form">
+            <form action="#" class="d-flex flex-column">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Имя" />
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Еmail" />
+              </div>
+              <div class="form-group_md">
+                <textarea name="mess" id="mess" class="form-control" placeholder="Напишите сообщение"></textarea>
+              </div>
+              <div class="form-group_md"><button class="btn btn_success w-100 btn_size-lg">Отправить</button></div>
+              <div class="text_size-md">
+                *Нажимая на кнопку оплаты Вы соглашаетесь <br class="d-none d-md-block" />с <a
+                  href="#"
+                  class="text_success"
+                  >Политикой конфиденциальности</a
+                >
+                и договором <a href="#" class="text_success">Оферты</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /callback -->
+
+    <!-- basket-empty -->
+    <div class="modal fade" id="basket-empty">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="modal__title title title_size-lg">Ваш заказ "Диета стол №5"</div>
+          <div class="modal__text">
+            <p>Корзина пуста. Добавьте в корзину хотя бы один товар</p>
+            <div class="modal__form-md">
+              <p class="mb-md">
+                Введите Email, на него придет ссылка для скачивания <br class="d-none d-md-block" />материалов Диеты
+                стола №5
+              </p>
+              <form action="#" class="d-flex flex-column">
+                <div class="form-group_lg">
+                  <input class="form-control" type="email" placeholder="Укажите ваш email" />
+                </div>
+                <div class="form-group_md"><button class="btn btn_danger w-100 btn_size-lg">Оплатить</button></div>
+                <div class="text_size-md">
+                  *Нажимая на кнопку оплаты Вы соглашаетесь <br class="d-none d-md-block" />с <a
+                    href="#"
+                    class="text_success"
+                    >Политикой конфиденциальности</a
+                  >
+                  и договором <a href="#" class="text_success">Оферты</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /basket-empty-->
+
+    <!-- basket -->
+    <div class="modal fade" id="basket">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="modal__title title title_size-lg">Ваш заказ "Диета стол №5"</div>
+          <div class="modal__text">
+            <div class="basket-group">
+              <div class="basket-item d-flex align-items-center">
+                <a href="#" class="basket-item__image"><img src="img/content/basket.jpg" alt="" class="img-fluid" /></a>
+                <a href="#" class="basket-item__title text_bold">Диета стол №5</a>
+                <div class="basket-item__price">99 р.</div>
+                <a href="#" class="basket-item__delete icon icon-delete"></a>
+              </div>
+              <div class="basket-group__summ text_right text_bold">Сумма: 99 р.</div>
+            </div>
+            <div class="modal__form">
+              <p class="mb-md">
+                Введите Email, на него придет ссылка для скачивания <br class="d-none d-md-block" />материалов Диеты
+                стола №5
+              </p>
+              <form action="#" class="d-flex flex-column">
+                <div class="form-group_lg">
+                  <input class="form-control" type="email" placeholder="Укажите ваш email" />
+                </div>
+                <div class="form-group_md"><button class="btn btn_danger w-100 btn_size-lg">Оплатить</button></div>
+                <div class="text_size-md">
+                  *Нажимая на кнопку оплаты Вы соглашаетесь <br class="d-none d-md-block" />с <a
+                    href="#"
+                    class="text_success"
+                    >Политикой конфиденциальности</a
+                  >
+                  и договором <a href="#" class="text_success">Оферты</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /basket-->
+
+    <!-- basket-removed -->
+    <div class="modal fade" id="basket-removed">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="modal__title title title_size-lg">Ваш заказ "Диета стол №5"</div>
+          <div class="modal__text">
+            <div class="basket-group basket-group_margin">
+              <div class="basket-item basket-item_removed d-flex align-items-center">
+                <a href="#" class="basket-item__num text_success">5</a>
+                <a href="#" class="basket-item__title text_light">Вы удалили "Диета стол №5"</a>
+                <a href="#" class="basket-item__return text_light">Вернуть</a>
+              </div>
+            </div>
+            <div class="modal__form">
+              <p class="mb-md">
+                Введите Email, на него придет ссылка для скачивания <br class="d-none d-md-block" />материалов Диеты
+                стола №5
+              </p>
+              <form action="#" class="d-flex flex-column">
+                <div class="form-group_lg">
+                  <input class="form-control" type="email" placeholder="Укажите ваш email" />
+                </div>
+                <div class="form-group_md"><button class="btn btn_danger w-100 btn_size-lg">Оплатить</button></div>
+                <div class="text_size-md">
+                  *Нажимая на кнопку оплаты Вы соглашаетесь <br class="d-none d-md-block" />с <a
+                    href="#"
+                    class="text_success"
+                    >Политикой конфиденциальности</a
+                  >
+                  и договором <a href="#" class="text_success">Оферты</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /basket-removed-->
+
+    <!-- download -->
+    <div class="modal fade" id="download">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="progress">50%</div>
+          <div class="modal__text">
+            <p>
+              Почти готово! Заполни эту форму и нажми на кнопку ниже, <br class="d-none d-lg-block" />чтобы мгновенно
+              получить книгу на свой e-mail
+            </p>
+            <div class="modal__title modal__title_margin title title_size-lg">
+              Скачай PDF - файл" <br />10 популярных ошибок, которые необратимо ухудшают здоровье при диете стола №5"
+            </div>
+            <form action="#" class="horizontal-form">
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Укажите ваш email" />
+              </div>
+              <div class="form-group_lg"><button class="btn btn_success w-100 btn_size-sm">Скачать</button></div>
+            </form>
+            <div class="text_bold bonus">+ бонус меню на 1 день</div>
+            <div>
+              Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a
+                href="#"
+                class="text_success"
+                >политикой конфиденциальности</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /download-->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

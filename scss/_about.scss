@@ -1,0 +1,56 @@
+.text-block {
+  margin-bottom: 10.2rem;
+
+  &_margin {
+    margin-bottom: 12.2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  @include bp(sm) {
+    margin-bottom: 8rem;
+  }
+}
+
+.about-block {
+  grid-template-columns: 16.7rem auto;
+  grid-gap: 1rem 5.2rem;
+
+  &__image {
+    margin: 2rem 0;
+
+    @include bp(sm) {
+      width: 16.5rem;
+    }
+  }
+
+  &__text {
+    @include bp(xl) {
+      padding-right: 6%;
+    }
+  }
+}
+
+.advantages {
+  &-row {
+    @include bp(xl-up) {
+      grid-template-columns: 46% auto;
+    }
+  }
+
+  &-block {
+    &__title {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.certificate-list {
+  gap: 2rem 3.5rem;
+
+  @include bp(sm) {
+    grid-gap: 2rem;
+  }
+}

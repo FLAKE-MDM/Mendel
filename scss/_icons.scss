@@ -1,0 +1,295 @@
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-position: 0 0;
+  display: inline-block;
+  flex-shrink: 0;
+
+  &_double {
+    position: relative;
+
+    @include bp(hv) {
+      &:hover {
+        &:before {
+          opacity: 0;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      transition: all 0.3s ease-out;
+    }
+    &:after {
+      opacity: 0;
+    }
+  }
+  .active > &,
+  .components-item.active & {
+    &:before {
+      opacity: 0;
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.icon-list {
+  width: 4.75rem;
+  height: 4.75rem;
+  background-image: url(../img/icons/list.svg);
+
+  &_lg {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.icon-restaurant {
+  width: 4.75rem;
+  height: 4.75rem;
+  background-image: url(../img/icons/restaurant.svg);
+
+  &_lg {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.icon-time {
+  width: 4.9rem;
+  height: 4.75rem;
+  background-image: url(../img/icons/time.svg);
+
+  &_lg {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.icon-recommendation {
+  width: 4.8rem;
+  height: 4.75rem;
+  background-image: url(../img/icons/recommendation.svg);
+
+  &_lg {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.icon-wall-clock {
+  width: 4.8rem;
+  height: 4.75rem;
+  background-image: url(../img/icons/wall-clock.svg);
+
+  &_lg {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.icon-frying {
+  width: 6.5rem;
+  height: 4.8rem;
+  background-image: url(../img/icons/frying.svg);
+}
+
+.icon-harvest {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-image: url(../img/icons/harvest.svg);
+}
+
+.icon-nutrients {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-image: url(../img/icons/nutrients.svg);
+}
+
+.icon-hepatitis {
+  width: 5.9rem;
+  height: 5.9rem;
+  background-image: url(../img/icons/hepatitis.svg);
+}
+
+.icon-cirrhosis {
+  width: 5.9rem;
+  height: 5.9rem;
+  background-image: url(../img/icons/cirrhosis.svg);
+}
+
+.icon-gallbladder {
+  width: 5.9rem;
+  height: 5.9rem;
+  background-image: url(../img/icons/gallbladder.svg);
+}
+
+.icon-intestine {
+  width: 5.9rem;
+  height: 5.9rem;
+  background-image: url(../img/icons/intestine.svg);
+}
+
+.icon-gallbladder-2 {
+  width: 5.9rem;
+  height: 5.9rem;
+  background-image: url(../img/icons/gallbladder-2.svg);
+}
+
+.icon-diet {
+  width: 4.75rem;
+  height: 4.75rem;
+  background-image: url(../img/icons/diet.svg);
+}
+
+.icon-time-black {
+  width: 4.75rem;
+  height: 4.75rem;
+  background-image: url(../img/icons/time-black.svg);
+}
+
+.icon-plus {
+  width: 3.3rem;
+  height: 3.3rem;
+  background-image: url(../img/icons/plus.svg);
+}
+
+.icon-facebook {
+  background-image: url(../img/icons/facebook.svg);
+}
+
+.icon-vk {
+  background-image: url(../img/icons/vk.svg);
+}
+
+.icon-telegram {
+  background-image: url(../img/icons/telegram.svg);
+}
+
+.icon-instagram {
+  background-image: url(../img/icons/instagram.svg);
+}
+
+.icon-whatsapp {
+  background-image: url(../img/icons/whatsapp.svg);
+}
+
+.icon-email {
+  background-image: url(../img/icons/email.svg);
+}
+
+.icon-phone-call {
+  background-image: url(../img/icons/phone-call.svg);
+}
+
+.icon-delete {
+  width: 3.8rem;
+  height: 3.8rem;
+  background-image: url(../img/icons/plus.svg);
+  transform: rotate(45deg);
+}
+
+.icon-close {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../img/icons/close.svg);
+}
+
+.icon-delivery {
+  width: 4.8rem;
+  height: 3rem;
+  background-image: url(../img/icons/delivery.svg);
+}
+
+.icon-phone {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-image: url(../img/icons/phone.svg);
+}
+
+.icon-email-inversion {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-image: url(../img/icons/email-inversion.svg);
+}
+
+.icon-doc {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-image: url(../img/icons/doc.svg);
+}
+
+.icon-map {
+  width: 2.2rem;
+  height: 2.6rem;
+  background-image: url(../img/icons/map.svg);
+}
+
+.icon-map-inversion {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-image: url(../img/icons/map-inversion.svg);
+}
+
+.icon-date {
+  width: 1.4rem;
+  height: 1.5rem;
+  background-image: url(../img/icons/date.svg);
+}
+
+.icon-view {
+  width: 1.8rem;
+  height: 1.4rem;
+  background-image: url(../img/icons/view.svg);
+}
+
+.icon-prev-arrow {
+  width: 1.8rem;
+  height: 1.4rem;
+  background-image: url(../img/icons/prev-arrow.svg);
+
+  &_lg {
+    width: 2.7rem;
+    height: 2rem;
+  }
+}
+
+.icon-next-arrow {
+  width: 1.8rem;
+  height: 1.4rem;
+  background-image: url(../img/icons/next-arrow.svg);
+}
+
+// ///////////////////////////////////
+.icon- {
+  width: rem;
+  height: rem;
+  background-image: url(../img/icons/.svg);
+}
+
+.icon- {
+  width: rem;
+  height: rem;
+
+  &:before {
+    background-image: url(../img/icons/.svg);
+  }
+
+  &:after {
+    background-image: url(../img/icons/-active.svg);
+  }
+}

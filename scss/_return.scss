@@ -1,0 +1,121 @@
+.delivery-info {
+  position: relative;
+  padding-left: 7.7rem;
+  margin-bottom: 8.1rem;
+  line-height: 2.9rem;
+
+  @include bp(sm) {
+    padding-left: 6.5rem;
+  }
+
+  @include bp(xxl-up) {
+    margin-right: 16%;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0.7rem;
+    left: 0;
+  }
+}
+
+.payment-list {
+  @include bp(lg-up) {
+    padding-left: 3rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 4.15rem;
+    }
+
+    @include bp(sm) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.delivery-content {
+  padding-top: 0.3rem;
+  grid-template-columns: 50% 38.2%;
+
+  @include bp(lg) {
+    grid-template-columns: 50% 45%;
+  }
+}
+
+.line-list_primary {
+  .line-list__item {
+    position: relative;
+    padding-left: 3.4rem;
+    margin-bottom: 1.6rem;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 1.9rem;
+      height: 0.2rem;
+      border-radius: 0.5rem;
+      background: $success;
+      position: absolute;
+      top: 1rem;
+      left: 0;
+    }
+  }
+}
+
+.dots-list_primary {
+  padding-left: 0.7rem;
+  margin-top: 1.6rem;
+
+  .dots-list__item {
+    margin-bottom: 1.7rem;
+
+    &:before {
+      width: 0.4rem;
+      height: 0.4rem;
+      background: $success;
+      margin: -0.2rem 0 0 -0.1rem;
+    }
+  }
+}
+
+.consultation-section {
+  padding: 8.4rem 0 7.4rem;
+  margin-bottom: 12rem;
+
+  @include bp(sm) {
+    margin-bottom: 8rem;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 23.6rem;
+    height: 24.8rem;
+    background: url(../img/consultation-before.svg) 0 0 no-repeat;
+    background-size: contain;
+    z-index: -1;
+    top: -2.2rem;
+    right: 0;
+    position: absolute;
+  }
+
+  &__content {
+    @include bp(xxl-up) {
+      margin-left: -1.1rem;
+    }
+  }
+
+  &__title {
+    @include bp(md-up) {
+      letter-spacing: 0.085rem;
+    }
+  }
+
+  &__form {
+    grid-template-columns: 61.5% auto;
+    grid-gap: 0 3.9rem;
+    padding-bottom: 0.3rem;
+  }
+}

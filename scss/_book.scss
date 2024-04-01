@@ -1,0 +1,259 @@
+// book-preview
+.book-preview {
+  padding: 9.7rem 0 9.2rem;
+
+  @include bp(md) {
+    padding: 6rem 0;
+  }
+
+  &_sm {
+    padding: 8.2rem 0 7.3rem;
+
+    @include bp(md) {
+      padding: 6rem 0;
+    }
+
+    .pattern_berry {
+      top: 5.5%;
+      right: 9%;
+    }
+
+    .book-preview__text {
+      padding-right: 0 !important;
+    }
+  }
+
+  &_md {
+    padding: 9.1rem 0 8.5rem;
+
+    @include bp(md) {
+      padding: 6rem 0;
+    }
+
+    .pattern_fish {
+      bottom: 5.3rem;
+      left: 0;
+    }
+
+    .pattern_tomato {
+      top: 20%;
+      right: 30%;
+    }
+
+    .pattern_plate {
+      transform: rotate(43deg);
+      right: 9.5rem;
+      bottom: 8.2rem;
+    }
+  }
+
+  &__content {
+    grid-template-columns: 39.4% auto;
+    grid-gap: 0 9%;
+
+    @include bp(md) {
+      grid-gap: 3rem;
+      align-items: flex-start;
+    }
+
+    &_md {
+      grid-template-columns: 40.4% auto;
+      grid-gap: 0 8%;
+
+      @include bp(md) {
+        grid-gap: 3rem;
+        margin: 0;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__text {
+    @include bp(xxl-up) {
+      padding-right: 10%;
+    }
+  }
+
+  &__image {
+    @include bp(sm) {
+      width: 40rem;
+      margin: 0 auto 3rem;
+      max-width: 100%;
+    }
+  }
+}
+
+.pattern-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.pattern {
+  position: absolute;
+  z-index: -1;
+
+  &_fish {
+    width: 7.2rem;
+    height: 11.2rem;
+    background: url(../img/fish.svg) 0 0 no-repeat;
+    background-size: contain;
+  }
+
+  &_tomato {
+    top: 15%;
+    right: 29.7%;
+    background: url(../img/tomato.svg) 0 0 no-repeat;
+    background-size: contain;
+  }
+
+  &_plate {
+    width: 12.6rem;
+    height: 9.5rem;
+    background: url(../img/plate.svg) 0 0 no-repeat;
+    background-size: contain;
+  }
+
+  &_berry {
+    width: 21.2rem;
+    height: 20.9rem;
+    background: url(../img/berry.svg) 0 0 no-repeat;
+    background-size: contain;
+  }
+}
+
+// diet-section
+.diet-section {
+  position: relative;
+  z-index: 1;
+
+  @include bp(sm) {
+    padding: 5rem 0 12rem;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/diet-before.svg) 0 0 no-repeat;
+    background-size: contain;
+  }
+
+  &:before {
+    width: 10.9rem;
+    height: 10.7rem;
+    top: -5.1rem;
+    left: 8%;
+  }
+
+  &:after {
+    background-image: url(../img/diet-after.svg);
+    bottom: -9.4rem;
+    left: 20.5%;
+    width: 31.1rem;
+    height: 24.9rem;
+
+    @include bp(sm) {
+      bottom: -8rem;
+    }
+  }
+
+  &_clear {
+    padding-bottom: 2.5rem;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  &__content {
+    grid-template-columns: 50.2% auto;
+    grid-gap: 0 10%;
+
+    &_md {
+      grid-gap: 0 7.5%;
+    }
+  }
+
+  &__image {
+    margin-top: -0.3rem;
+    position: relative;
+    z-index: 1;
+
+    @include bp(sm) {
+      width: 40rem;
+      margin: 0 auto 3rem;
+      max-width: 100%;
+    }
+
+    &:before {
+      content: "";
+      z-index: -1;
+      display: block;
+      position: absolute;
+      bottom: 41%;
+      right: -16.5%;
+      width: 78.5%;
+      height: 92%;
+      background: url(../img/diet-image-before.svg) 0 0 no-repeat;
+      background-size: contain;
+    }
+
+    &_margin {
+      @include bp(md-up) {
+        margin: 0.8rem -7.7% 0 8%;
+
+        &:before {
+          bottom: 38%;
+          right: -9.5%;
+        }
+      }
+    }
+
+    &_after {
+      &:before {
+        bottom: -30%;
+        right: auto;
+        left: 14%;
+        background: url(../img/diet-image-before.png) 0 100% no-repeat;
+        background-size: contain;
+        width: 65%;
+        height: 67%;
+      }
+
+      &:after {
+        content: "";
+        z-index: -1;
+        display: block;
+        position: absolute;
+        top: -26.5%;
+        right: 6%;
+        width: 70%;
+        height: 65%;
+        background: url(../img/diet-image-after.png) 0 0 no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 0.2rem;
+
+    &_padding {
+      padding-top: 11.7rem;
+
+      @include bp(xl) {
+        padding-top: 5rem;
+      }
+
+      @include bp(lg) {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.line-list {
+  margin-bottom: 3.9rem;
+}

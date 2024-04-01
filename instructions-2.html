@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mendel</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="overlay"></div>
+        <div class="pane-close nav__close"></div>
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="logo me-auto"><img src="img/logo.svg" alt="Mendel" class="img-fluid" /></a>
+            <nav class="nav pane" id="nav">
+              <ul class="nav-list d-lg-flex align-items-center">
+                <li class="nav-list__item"><a href="#" class="nav-list__link active">Главная</a></li>
+                <li class="nav-list__item dropdown">
+                  <a href="#" class="nav-list__link">О нас</a>
+                  <div class="dropdown-menu dropdown-menu_nav">
+                    <ul class="sub-nav text_size-md">
+                      <li class="sub-nav__item"><a href="#" class="sub-nav__link">Возврат</a></li>
+                      <li class="sub-nav__item"><a href="#" class="sub-nav__link">Покупка</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Блог</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Отзывы</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                <li class="nav-list__item d-lg-none">
+                  <a href="#callback" class="btn btn_success btn_size-sm modal-open w-100_sm">Написать нам</a>
+                </li>
+                <li class="nav-list__item d-lg-none">
+                  <a href="#basket-empty" class="btn btn_danger btn_size-sm modal-open w-100_sm">Купить диету</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__buttons d-flex align-items-center">
+              <a href="#callback" class="btn btn_success btn_size-sm modal-open d-none d-md-block">Написать нам</a>
+              <a href="#basket-empty" class="btn btn_danger btn_size-sm d-none d-xxxl-block modal-open">Купить диету</a>
+            </div>
+            <a href="#nav" class="btn-menu pane-open d-lg-none">
+              <span class="btn-menu__item"></span>
+              <span class="btn-menu__item"></span>
+              <span class="btn-menu__item"></span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+      <div class="container">
+        <!-- preview -->
+        <section class="preview">
+          <div class="d-md-flex preview__content mb-0 justify-content-between">
+            <div class="preview__text preview__text_padding">
+              <h1 class="title preview__title mb-sm">
+                Готовая <span class="text_success">«Диета стол №5»</span> для тех, кто дорожит здоровьем и доверяет
+                профессионалам!
+              </h1>
+              <div class="preview__image preview__image_styling d-md-none">
+                <img src="img/instruction.png" alt="" class="img-fluid" />
+              </div>
+              <p>37 специалистов работали над составлением диеты!</p>
+              <div class="mb-md text_success text_semimbold">Этого вы не найдете НИГДЕ!</div>
+              <div class="preview__btn">
+                <a href="#basket" class="btn btn_danger w-100 modal-open">Купить за 390 руб.</a>
+              </div>
+            </div>
+            <div class="preview__image preview__image_styling d-none d-md-block">
+              <img src="img/instruction.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <!-- advantages -->
+          <div class="advantages d-flex text_size-xs text_mediumbold text_center justify-content-between">
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-list"></div>
+              </div>
+              <p>Полный список продуктов питания с подробным пояснением</p>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-restaurant"></div>
+              </div>
+              <p>Меню из 300+ блюд уникальное и единственное в своем роде!</p>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-time"></div>
+              </div>
+              <p>Дополнительный материал помогающий легко следить за диетой!</p>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-recommendation"></div>
+              </div>
+              <p>Полезные рекомендации и пояснения, как правильно восстанавливать здоровье</p>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon d-flex justify-content-center">
+                <div class="icon icon-wall-clock"></div>
+              </div>
+              <p>Экономим до 1000 часов освобождая Вас от поиска проверенной информации!</p>
+            </div>
+          </div>
+          <!-- /advantages -->
+        </section>
+        <!-- /preview -->
+      </div>
+      <!-- instruction-section -->
+      <section class="instruction-section">
+        <div class="container">
+          <h2 class="title text_center mb-xl">Как использовать материалы по диете стол №5</h2>
+          <div class="data-section__content d-md-grid grid-2 grid-lg-4 text_vertical">
+            <div class="statistic-item instruction-item">
+              <div class="statistic-item__num d-flex align-items-center justify-content-between">
+                <img src="img/icons/download.svg" alt="" class="img-fluid" />
+              </div>
+              <p>
+                После покупки скачать к себе на компьютер, ноутбук, планшет и т.д. Открыть файл с продуктами, меню и
+                ознакомиться с ними
+              </p>
+            </div>
+            <div class="statistic-item instruction-item">
+              <div class="statistic-item__num d-flex align-items-center justify-content-between">
+                <img src="img/icons/open-folder.svg" alt="" class="img-fluid" />
+              </div>
+              <p>
+                Открыть файл по диете и составить примерный рацион на каждый день, на неделю вперед. С учетом
+                необходимых пропорций
+              </p>
+            </div>
+            <div class="statistic-item instruction-item">
+              <div class="statistic-item__num d-flex align-items-center justify-content-between">
+                <img src="img/icons/dairy-products.svg" alt="" class="img-fluid" />
+              </div>
+              <p>Закупить необходимые продукты на неделю вперед, полагаясь на недельный рацион</p>
+            </div>
+            <div class="statistic-item instruction-item">
+              <div class="statistic-item__num d-flex align-items-center justify-content-between">
+                <img src="img/icons/meal.svg" alt="" class="img-fluid" />
+              </div>
+              <p>
+                Наслаждаться комфортной диетой используя в рационе все необходимые продукты и разбавляя меню. А также
+                следить за свои здоровьем
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /instruction-section -->
+      <!-- data-section -->
+      <section class="data-section bg_light">
+        <div class="container">
+          <h2 class="title text_center mb-xl">
+            Вам понадобится 6 месяцев, чтобы найти в <br class="d-none d-md-block" />интернете всю необходимую
+            информацию
+          </h2>
+          <div class="data-section__content d-md-grid grid-2 grid-lg-4 justify-content-between">
+            <div class="statistic-item">
+              <div class="statistic-item__num">1124</div>
+              <p>Часов потрачено на обработку и создание информации по диете</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">483</div>
+              <p>Книг, научных публикайий, сайтов мы просмотрели, чтобы соединить всю информацию</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">300</div>
+              <p>Более 300 блюд в меню, собранные воедино, в одном месте, здесь и сейчас</p>
+            </div>
+            <div class="statistic-item">
+              <div class="statistic-item__num">37</div>
+              <p>Специалистов из разных сфер помогали в создании диеты. Врачи, диетологи, спортсмены</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /data-section -->
+      <!-- order-section -->
+      <section class="order-section pattern-wrap">
+        <div class="pattern pattern_berry"></div>
+        <div class="pattern pattern_leaves"></div>
+        <div class="container">
+          <h2 class="title title_size-md text_center mb-sm">
+            Бери и наслаждайся!<br />Для тех кто ценит свое время и здоровье!
+          </h2>
+          <div class="mb-md text_center">
+            Много материалов, получение сразу после оплаты, все в одном месте, прямо здесь и сейчас!
+          </div>
+          <div class="order-section__btn"><a href="#" class="btn btn_danger w-100">Купить за 390 руб.</a></div>
+        </div>
+      </section>
+      <!-- /order-section -->
+      <!-- reviews-section -->
+      <section class="reviews-section">
+        <div class="container">
+          <h2 class="title text_center mb-xxl">Они уже восстанавливают доровье на диете стола №5</h2>
+          <div class="reviews-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews-item reviews-item_md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image">
+                      <img src="img/content/user-12.png" alt="" class="w-100" />
+                    </div>
+                    <div class="reviews-item__name text_center title title_size-sm">Максим Жуков</div>
+                    <p>
+                      Крутые ребята! Все четко подготовили, все удобно. А то школьники с их рекомандациями на других
+                      сайтах пишут всякую ахинею. Здесь есть все, что необходимо, даже больше.Народ покупайте на этом
+                      сайте и не майтесь фигней, лучше вы не найдете!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item reviews-item_md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image">
+                      <img src="img/content/user-13.png" alt="" class="w-100" />
+                    </div>
+                    <div class="reviews-item__name text_center title title_size-sm">Александр Суворов</div>
+                    <p>
+                      Если бы не операция, ни когда бы не подумал, что можно так питаться. В целом коль уж некуда
+                      деваться, решил взять данную инструкцию по диете, только ради меню, а то нигде не мог найти! Хотя
+                      и рекомендации с продуктами питания неплохая вещь, было интересно узнать новое. Все очень
+                      понравилось.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item reviews-item_md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image">
+                      <img src="img/content/user-14.png" alt="" class="w-100" />
+                    </div>
+                    <div class="reviews-item__name text_center title title_size-sm">Эльвира Усманова</div>
+                    <p>
+                      Здравствуйте! Очень понравилось ваше меню, очень интересное и обширное. Описание продуктов похоже
+                      сделано профессионалами, встретила такое впервые. Особая благодарность Алене за поддержку и
+                      пояснения. Все очень здорово, дай бог Вам здоровья и процветания!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item reviews-item_md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-1.png" alt="" class="w-100" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Людмила Усынина</div>
+                    <p>
+                      Большое Вам спасибо, Вы так облегчили мои поиски. Смотрела на многих сайтах, искала подробную
+                      информацию, честно говоря ничего хорошего не нашла. Решила купить у Вас и осталась полностью
+                      довольна. Теперь у меня есть все необходимое и больше ничего искать не нужно. Желаю вам успехов.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-item reviews-item_md">
+                  <div class="reviews-item__content">
+                    <div class="reviews-item__image"><img src="img/content/user-2.png" alt="" class="w-100" /></div>
+                    <div class="reviews-item__name text_center title title_size-sm">Алексей Василец</div>
+                    <p>
+                      Не особо люблю рыться по сайтам и рыться в этой сумбурных потоках информации! Наткнулся на данный
+                      сайт, был очень рад, что можно полностью все купить за смешную цену и не париться! Благодарю за
+                      подробную информацию и развернутые описания, все теперь стало гораздо легче. Желаю Вам успехов!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center swiper-nav swiper-nav_md">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination d-flex align-items-center"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /reviews-section -->
+      <!-- detail-section -->
+      <section class="detail-section">
+        <div class="container">
+          <h2 class="title text_center mb-xl">Немного заглянем внутрь</h2>
+          <div class="detail-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/content/detail-1.jpg" alt="" class="w-100 d-block" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/content/detail-2.jpg" alt="" class="w-100 d-block" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/content/detail-1.jpg" alt="" class="w-100 d-block" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/content/detail-2.jpg" alt="" class="w-100 d-block" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/content/detail-1.jpg" alt="" class="w-100 d-block" />
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center swiper-nav swiper-nav_md">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination d-flex align-items-center"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /detail-section -->
+      <!-- description-section -->
+      <section class="description-section bg_light description-section_padding">
+        <div class="container">
+          <h2 class="title text_center mb-xl">
+            Готовая <span class="text_success">«Диета стол №5»</span> для тех, кто дорожит<br
+              class="d-none d-md-block"
+            />
+            здоровьем и доверяет профессионалам!
+          </h2>
+          <div
+            class="arrow-block arrow-block_padding d-flex flex-wrap justify-content-between text_center text_mediumbold"
+          >
+            <div class="arrow-block__image arrow-block__image_sm d-flex justify-content-center">
+              <img src="img/instruction.png" alt="" class="img-fluid" />
+            </div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon"><div class="icon icon-list icon-list_lg"></div></div>
+              <p>Полный список продуктов питания с подробным пояснением</p>
+            </div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon"><div class="icon icon-wall-clock icon-wall-clock_lg"></div></div>
+              <p>Экономим до 1000 часов освобождая Вас от поиска проверенной информации!</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon"><div class="icon icon-time icon-time_lg"></div></div>
+              <p>Дополнительный материал помогающий легко следить за диетой!</p>
+            </div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon"><div class="icon icon-restaurant icon-restaurant_lg"></div></div>
+              <p>Меню из 300+ блюд уникальное и единственное в своем роде!</p>
+            </div>
+            <div class="arrow-block__item arrow-block__item_md advantages-item">
+              <div class="advantages-item__icon">
+                <div class="icon icon-recommendation icon-recommendation_lg"></div>
+              </div>
+              <p>Полезные рекомендации и пояснения, как правильно восстанавливать здоровье</p>
+            </div>
+          </div>
+          <div class="description-section__text text_center">
+            <div class="mb-md">
+              37 специалистов работали над составлением диеты!
+              <span class="text_success text_semimbold">Этого вы не найдете НИГДЕ!</span>
+            </div>
+            <a href="#" class="btn btn_danger w-100">Купить за 390 руб.</a>
+          </div>
+        </div>
+      </section>
+      <!-- /description-section -->
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content text_size-sm d-lg-flex justify-content-between">
+            <div class="footer__col">
+              <a href="index.html" class="logo footer__logo d-inline-flex"
+                ><img src="img/logo.svg" alt="" class="img-fluid"
+              /></a>
+              <p>ОГРН: 312167306600046 <br />ИНН: 164809246567</p>
+              <p><a href="#" class="text_inversion">Политика конфиденциальности</a></p>
+              <p><a href="#" class="text_inversion">Оферта</a></p>
+            </div>
+            <div class="footer__col_large">
+              <a href="#basket-removed" class="btn w-100 btn_danger footer__btn btn_size-sm modal-open">Купить диету</a>
+              <div class="d-md-flex justify-content-between">
+                <ul class="footer-nav">
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">Главная</a></li>
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">Отзывы</a></li>
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">О нас</a></li>
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">Контакты</a></li>
+                  <li class="footer-nav__item"><a href="#" class="footer-nav__link text_inversion">Блог</a></li>
+                </ul>
+                <div class="footer__social">
+                  <div class="social-group d-md-flex">
+                    <div class="social-group__title">Подпишитесь на наши социальные сети:</div>
+                    <ul class="social-list">
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-facebook"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-vk"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-telegram"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-instagram"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-whatsapp"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link icon icon-email"></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="social-group d-md-flex">
+                    <div class="social-group__title">Связаться с нами:</div>
+                    <ul class="social-list">
+                      <li class="social-list__item"><a href="#" class="social-list__link icon icon-phone-call"></a></li>
+                      <li class="social-list__item"><a href="#" class="social-list__link icon icon-email"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /footer -->
+    </div>
+
+    <!-- callback -->
+    <div class="modal fade" id="callback">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="modal__title title title_size-lg">Написать нам</div>
+          <div class="modal__form">
+            <form action="#" class="d-flex flex-column">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Имя" />
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Еmail" />
+              </div>
+              <div class="form-group_md">
+                <textarea name="mess" id="mess" class="form-control" placeholder="Напишите сообщение"></textarea>
+              </div>
+              <div class="form-group_md"><button class="btn btn_success w-100 btn_size-lg">Отправить</button></div>
+              <div class="text_size-md">
+                *Нажимая на кнопку оплаты Вы соглашаетесь <br class="d-none d-md-block" />с <a
+                  href="#"
+                  class="text_success"
+                  >Политикой конфиденциальности</a
+                >
+                и договором <a href="#" class="text_success">Оферты</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /callback -->
+
+    <!-- basket-empty -->
+    <div class="modal fade" id="basket-empty">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="modal__title title title_size-lg">Ваш заказ "Диета стол №5"</div>
+          <div class="modal__text">
+            <p>Корзина пуста. Добавьте в корзину хотя бы один товар</p>
+            <div class="modal__form-md">
+              <p class="mb-md">
+                Введите Email, на него придет ссылка для скачивания <br class="d-none d-md-block" />материалов Диеты
+                стола №5
+              </p>
+              <form action="#" class="d-flex flex-column">
+                <div class="form-group_lg">
+                  <input class="form-control" type="email" placeholder="Укажите ваш email" />
+                </div>
+                <div class="form-group_md"><button class="btn btn_danger w-100 btn_size-lg">Оплатить</button></div>
+                <div class="text_size-md">
+                  *Нажимая на кнопку оплаты Вы соглашаетесь <br class="d-none d-md-block" />с <a
+                    href="#"
+                    class="text_success"
+                    >Политикой конфиденциальности</a
+                  >
+                  и договором <a href="#" class="text_success">Оферты</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /basket-empty-->
+
+    <!-- basket -->
+    <div class="modal fade" id="basket">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="modal__title title title_size-lg">Ваш заказ "Диета стол №5"</div>
+          <div class="modal__text">
+            <div class="basket-group">
+              <div class="basket-item d-flex align-items-center">
+                <a href="#" class="basket-item__image"><img src="img/content/basket.jpg" alt="" class="img-fluid" /></a>
+                <a href="#" class="basket-item__title text_bold">Диета стол №5</a>
+                <div class="basket-item__price">99 р.</div>
+                <a href="#" class="basket-item__delete icon icon-delete"></a>
+              </div>
+              <div class="basket-group__summ text_right text_bold">Сумма: 99 р.</div>
+            </div>
+            <div class="modal__form">
+              <p class="mb-md">
+                Введите Email, на него придет ссылка для скачивания <br class="d-none d-md-block" />материалов Диеты
+                стола №5
+              </p>
+              <form action="#" class="d-flex flex-column">
+                <div class="form-group_lg">
+                  <input class="form-control" type="email" placeholder="Укажите ваш email" />
+                </div>
+                <div class="form-group_md"><button class="btn btn_danger w-100 btn_size-lg">Оплатить</button></div>
+                <div class="text_size-md">
+                  *Нажимая на кнопку оплаты Вы соглашаетесь <br class="d-none d-md-block" />с <a
+                    href="#"
+                    class="text_success"
+                    >Политикой конфиденциальности</a
+                  >
+                  и договором <a href="#" class="text_success">Оферты</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /basket-->
+
+    <!-- basket-removed -->
+    <div class="modal fade" id="basket-removed">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="modal__title title title_size-lg">Ваш заказ "Диета стол №5"</div>
+          <div class="modal__text">
+            <div class="basket-group basket-group_margin">
+              <div class="basket-item basket-item_removed d-flex align-items-center">
+                <a href="#" class="basket-item__num text_success">5</a>
+                <a href="#" class="basket-item__title text_light">Вы удалили "Диета стол №5"</a>
+                <a href="#" class="basket-item__return text_light">Вернуть</a>
+              </div>
+            </div>
+            <div class="modal__form">
+              <p class="mb-md">
+                Введите Email, на него придет ссылка для скачивания <br class="d-none d-md-block" />материалов Диеты
+                стола №5
+              </p>
+              <form action="#" class="d-flex flex-column">
+                <div class="form-group_lg">
+                  <input class="form-control" type="email" placeholder="Укажите ваш email" />
+                </div>
+                <div class="form-group_md"><button class="btn btn_danger w-100 btn_size-lg">Оплатить</button></div>
+                <div class="text_size-md">
+                  *Нажимая на кнопку оплаты Вы соглашаетесь <br class="d-none d-md-block" />с <a
+                    href="#"
+                    class="text_success"
+                    >Политикой конфиденциальности</a
+                  >
+                  и договором <a href="#" class="text_success">Оферты</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /basket-removed-->
+
+    <!-- download -->
+    <div class="modal fade" id="download">
+      <div class="modal-dialog">
+        <div class="modal__content">
+          <button type="button" class="icon icon-close modal-close modal__close d-lg-none"></button>
+          <div class="progress">50%</div>
+          <div class="modal__text">
+            <p>
+              Почти готово! Заполни эту форму и нажми на кнопку ниже, <br class="d-none d-lg-block" />чтобы мгновенно
+              получить книгу на свой e-mail
+            </p>
+            <div class="modal__title modal__title_margin title title_size-lg">
+              Скачай PDF - файл" <br />10 популярных ошибок, которые необратимо ухудшают здоровье при диете стола №5"
+            </div>
+            <form action="#" class="horizontal-form">
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Укажите ваш email" />
+              </div>
+              <div class="form-group_lg"><button class="btn btn_success w-100 btn_size-sm">Скачать</button></div>
+            </form>
+            <div class="text_bold bonus">+ бонус меню на 1 день</div>
+            <div>
+              Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a
+                href="#"
+                class="text_success"
+                >политикой конфиденциальности</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /download-->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

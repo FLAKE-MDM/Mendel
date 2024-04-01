@@ -1,0 +1,187 @@
+.header {
+  padding: 1.1rem 0 1rem;
+  background: #fff;
+  z-index: 95;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 2.9px 26px 0px #00000033;
+
+  &__buttons {
+    grid-gap: 1.93rem;
+    margin-left: 2.6%;
+  }
+}
+
+.logo {
+  flex-shrink: 0;
+
+  @include bp(hv) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.navbar {
+  margin: 0 auto;
+}
+
+.nav {
+  @include bp(md) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    background: #fff;
+    top: 0;
+    overflow: auto;
+    z-index: 99;
+    padding: 5rem 3rem;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+
+    &.show {
+      transform: none;
+    }
+  }
+
+  &__close {
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  &-list {
+    &__item {
+      margin: 0 3.85rem;
+
+      @include bp(xxl) {
+        margin: 0 2.5rem;
+      }
+
+      @include bp(lg) {
+        margin: 0 1.5rem;
+      }
+
+      @include bp(md) {
+        margin: 0 0 1rem;
+      }
+
+      @include bp(hv) {
+        &:hover {
+          .nav-list__link {
+            color: #569f36;
+            z-index: 96;
+
+            &:before {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      @include bp(lg) {
+      }
+
+      @include bp(md) {
+        margin-right: 0;
+        padding: 0;
+      }
+    }
+
+    &__link {
+      font-weight: 600;
+      display: inline-flex;
+      color: #000;
+      position: relative;
+      padding: 0.6rem 0;
+      white-space: nowrap;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(to bottom, #98d67d 0%, #569f36 100%);
+        transition: all 0.3s ease-out;
+        box-shadow: 0px 0.7px 14px 0px #86b472b0;
+        height: 0.5rem;
+        border-radius: 1.8rem;
+        width: 0;
+      }
+
+      &.active {
+        color: #569f36;
+        font-size: 2.3rem;
+        bottom: 0.3rem;
+
+        &:before {
+          width: 100%;
+        }
+      }
+
+      @include bp(hv) {
+        &:hover {
+          color: #569f36;
+
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sub-nav {
+  @include bp(md) {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1.7rem;
+
+      @include bp(sm) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.btn-menu {
+  display: block;
+  border: none;
+  align-self: center;
+  background: none;
+  flex-shrink: 0;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid $success;
+  margin-left: 2rem;
+
+  &__item {
+    display: block;
+    width: 3rem;
+    height: 0.2rem;
+    border-top-style: 5px;
+    background: $success;
+    transition: all 0.3s ease-out;
+  }
+
+  &__item + &__item {
+    margin-top: 0.5rem;
+  }
+}

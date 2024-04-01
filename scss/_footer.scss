@@ -1,0 +1,96 @@
+.footer {
+  padding: 5rem 0 2.5rem;
+  margin-top: auto;
+  background: #020202;
+  color: #fff;
+
+  @include bp(md) {
+    padding: 2.4rem 0 1rem;
+  }
+
+  &__logo {
+    margin-bottom: 2.5rem;
+  }
+
+  &__col {
+    p {
+      margin-bottom: 2.4rem;
+    }
+
+    &_large {
+      width: 66.8%;
+      padding-top: 1.3rem;
+
+      @include bp(md) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__btn {
+    box-shadow: 0px 0px 17px 0px #ffffff99;
+    letter-spacing: 0.15rem;
+    margin-bottom: 3rem;
+  }
+
+  &-nav {
+    margin-top: 1rem;
+    align-self: flex-start;
+
+    @include bp(xl-up) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 50.1%;
+    }
+
+    &__item {
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  &__social {
+    @include bp(sm) {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.social {
+  &-group {
+    margin-bottom: 3rem;
+    align-items: center;
+
+    &__title {
+      width: 17rem;
+      margin-right: 2.6rem;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+
+      @include bp(sm) {
+        margin: 0 0 1rem;
+      }
+    }
+  }
+
+  &-list {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+
+    &__item {
+      margin-left: 0.7rem;
+    }
+
+    &__link {
+      display: inline-flex;
+      width: 3.2rem;
+      height: 3.2rem;
+
+      @include bp(hv) {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

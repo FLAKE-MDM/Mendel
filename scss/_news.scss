@@ -1,0 +1,42 @@
+.news {
+  &-list {
+    grid-row-gap: 0;
+  }
+
+  &-item {
+    margin-bottom: 6rem;
+
+    &__image {
+      position: relative;
+      margin-bottom: 1.6rem;
+    }
+
+    &__info {
+      position: absolute;
+      right: 1.7rem;
+      bottom: 1.7rem;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-radius: 1.8rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+    }
+
+    &__date {
+      margin-right: 0.9rem;
+    }
+
+    &__icon {
+      margin-right: 0.5rem;
+    }
+
+    &__view {
+      margin-right: 1.4rem;
+    }
+
+    &__title {
+      line-height: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+// instruction-section
+.instruction {
+  &-section {
+    .data-section__content {
+      margin-bottom: -1rem;
+
+      @include bp(xxl-up) {
+        grid-gap: 3rem 10%;
+      }
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    &:not(:last-child) {
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10.3rem;
+        height: 7.4rem;
+        background: url(../img/icons/arrow.svg) 0 0 no-repeat;
+        background-size: contain;
+        top: 4.1rem;
+        left: 97%;
+
+        @include bp(xxl) {
+          left: 105%;
+          width: 9rem;
+        }
+
+        @include bp(xxl) {
+          left: 97%;
+        }
+
+        @include bp(lg) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// order-section
+.order-section {
+  padding-top: 0.4rem;
+
+  .pattern_berry {
+    top: -9.9rem;
+    left: 8.8%;
+    transform: rotate(-77deg);
+    width: 17.2rem;
+  }
+
+  .pattern_leaves {
+    top: -6.4rem;
+    right: 8%;
+  }
+
+  &.bg_dark {
+    padding: 7.2rem 0 7.1rem;
+
+    .pattern_berry-dark {
+      top: 9.5rem;
+      left: 8%;
+
+      @include bp(xxl) {
+        left: 0;
+      }
+    }
+
+    .pattern_vegetables-dark {
+      top: -0.2rem;
+      right: 8.6%;
+
+      @include bp(xxl) {
+        right: 0;
+      }
+    }
+
+    .order-section__btn {
+      padding-top: 0.3rem;
+
+      @include bp(xl-up) {
+        width: 59%;
+      }
+    }
+  }
+
+  &.bg_light {
+    padding: 7.4rem 0 7.2rem;
+
+    .order-section__btn {
+      padding: 0;
+
+      @include bp(xl-up) {
+        width: 59%;
+      }
+    }
+  }
+
+  &_pattern {
+    &::before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 19.3rem;
+      height: 16.9rem;
+      top: 2.3rem;
+      left: 3.3rem;
+      background: url(../img/order-before.svg) 0 0 no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &:after {
+      top: auto;
+      bottom: 0;
+      left: auto;
+      right: 0;
+      background: url(../img/order-after.svg) 0 100% no-repeat;
+      background-size: contain;
+      width: 18.4rem;
+      height: 12.5rem;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    padding-top: 0.4rem;
+
+    @include bp(xl-up) {
+      width: 74%;
+    }
+  }
+}
+
+// detail-section
+.detail-section {
+  @include bp(xl-up) {
+    padding-bottom: 2.1rem;
+  }
+
+  &_pattern {
+    @include bp(md-up) {
+      margin-bottom: 8.6rem;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 11rem;
+      height: 10.2rem;
+      bottom: 0;
+      left: 0;
+      background: url(../img/detail-before.svg) 0 0 no-repeat;
+      background-size: contain;
+    }
+  }
+}

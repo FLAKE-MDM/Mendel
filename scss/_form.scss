@@ -1,0 +1,137 @@
+.form {
+  &-group {
+    margin-bottom: 2rem;
+
+    &_md {
+      margin-bottom: 3rem;
+    }
+
+    &_lg {
+      margin-bottom: 3.9rem;
+    }
+  }
+
+  &-control {
+    font-family: inherit;
+    display: block;
+    border: 1px solid #f5faff;
+    border-radius: 5rem;
+    padding: 1.175rem 3.6rem;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    font-weight: 400;
+    background: #f5faff;
+    transition: all 0.3s ease-out;
+
+    &.has-error {
+      border-color: $danger;
+      &::-webkit-input-placeholder {
+        color: $danger !important;
+      }
+      &::-moz-placeholder {
+        color: $danger !important;
+      }
+      &:-moz-placeholder {
+        color: $danger !important;
+      }
+      &:-ms-input-placeholder {
+        color: $danger !important;
+      }
+    }
+    &:disabled {
+      background: #e8e8e8;
+      border-color: #e8e8e8;
+    }
+    &:focus {
+    }
+  }
+
+  &-check-input {
+    flex-shrink: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: inline-block;
+    vertical-align: -0.3rem;
+    border-radius: 5px;
+    margin-right: 1.6rem;
+    border: 1px solid #cbcbcb;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      border-color: #000;
+    }
+    &:checked {
+      background: #000;
+      border-color: #000;
+      &:before {
+        opacity: 1;
+      }
+    }
+    &:before {
+      content: "";
+      display: block;
+      width: 1.2rem;
+      height: 0.9rem;
+      //   background: url(../img/icons/checkbox-inversion.svg) 0 0 no-repeat;
+      transition: all 0.3s ease-out;
+      opacity: 0;
+    }
+    &_sm {
+      border-radius: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 1.3rem;
+    }
+  }
+
+  &-radio-input {
+    flex-shrink: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(#191919, 0.3);
+    transition: all 0.3s ease-out;
+    margin-right: 1.6rem;
+    position: relative;
+    cursor: pointer;
+    @include bp(sm) {
+      margin-right: 1.2rem;
+    }
+    &:hover {
+    }
+    &:checked {
+      border-width: 8px;
+    }
+  }
+}
+
+textarea.form-control {
+  border-radius: 2rem;
+  resize: vertical;
+  min-height: 9.7rem;
+}
+
+// rating
+.rating {
+  width: 7.2rem;
+  height: 1.3rem;
+  position: relative;
+  background: url(../img/icons/rating.svg) 0 0 no-repeat;
+  background-size: auto 100%;
+
+  &__active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../img/icons/rating-active.svg) 0 0 no-repeat;
+    background-size: auto 100%;
+  }
+}

@@ -1,0 +1,138 @@
+.back-link {
+  margin: 1rem 2.9rem 0 0;
+
+  @include bp(sm) {
+    margin: 0 0 2rem;
+  }
+
+  @include bp(hv) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &_last {
+    font-size: 1.9rem;
+
+    @include bp(xl-up) {
+      margin-left: 4.7rem;
+    }
+
+    .icon {
+      margin-right: 3.2rem;
+    }
+  }
+}
+
+.blockquote {
+  position: relative;
+  padding: 0 0 0.3rem 8.7rem;
+  line-height: 2.3rem;
+
+  @include bp(xxl-up) {
+    padding-right: 12%;
+  }
+
+  @include bp(sm) {
+    padding-left: 5.5rem;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    width: 3.5rem;
+    height: 2.7rem;
+    background: url(../img/icons/quote.svg) 0 0 no-repeat;
+    background-size: contain;
+
+    @include bp(sm) {
+      left: 0;
+    }
+  }
+}
+
+.card {
+  grid-template-columns: 31.9% auto;
+
+  &__image {
+    margin-top: -0.4rem;
+
+    @include bp(sm) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.text-row {
+  grid-template-columns: auto 20.6%;
+  grid-gap: 5%;
+
+  @include bp(xxl-up) {
+    padding-right: 4%;
+  }
+
+  .text_size-sm {
+    line-height: 2.6rem;
+  }
+
+  &__col {
+    line-height: 2.3rem;
+
+    @include bp(md) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.table {
+  width: 100%;
+
+  th {
+    font: 700 2.8rem/3.1rem "Comfortaa", sans-serif;
+    color: #fff;
+    background: $success;
+    border-right: 1px solid #fff;
+    padding: 2rem;
+
+    @include bp(lg) {
+      font-size: 2.2rem;
+    }
+
+    &:first-child {
+      border-top-left-radius: 1rem;
+    }
+    &:last-child {
+      border-top-right-radius: 1rem;
+    }
+  }
+
+  td {
+    padding: 2rem 3rem 2.7rem;
+    border-bottom: 1px solid #d2e4cb;
+
+    &:not(:last-child) {
+      border-right: 1px solid #abc2a2;
+    }
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+
+  &-responsive {
+    @include bp(md) {
+      overflow: auto;
+      border: 1px solid #aaa;
+
+      td,
+      th {
+        white-space: nowrap;
+      }
+    }
+  }
+}
